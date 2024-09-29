@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> rock paper scissor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 100vh;
+            width: 100%;
+            text-transform: capitalize;
+            background-color: #000000;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            mix-blend-mode: darken;
+
+        }
+
+        .name {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 33px;
+        }
+
+        h1 {
+            margin-bottom: 100px;
+
+        }
+        #paper img {
+            rotate: -90deg;
+        }
+        #scissor img {
+            rotate: 150deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>rock paper scissor</h1>
+        <h4>play with computer</h4>
+        <div class="choices">
+            <button id="rock"> <img
+                    src="data:image/jpeg;base64,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"
+                    alt=""></button>
+            <button id="paper"> <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_Kz2gGlsOaxK3HTZTQOWdz9YtxVwWyy7C1p1Ow8Zhb3wXQSpxKvrm_fKcqjcxvyU7yM&usqp=CAU"
+                    alt=""></button>
+            <button id="scissor"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KAZtQUpeqelxjO89TJxMfAFtWsX1SCIwCXNaY3HNhfKSy5WTZKEF4K5nWX7upL5NvKo&usqp=CAU"
+                    alt=""></button>
+            <div class="name">
+                <h3>rock</h3>
+                <h3> paper</h3>
+                <h3>scissor</h3>
+            </div>       
+         </div>
+         <h2 id="results"></h2>
+
+    </div>
+    <script>
+        const choices = document.querySelectorAll('button');
+        const results = document.querySelector('#results');
+        
+        choices.forEach(choice => {
+            choice.addEventListener('click', () => {
+                const userchoice = choice.id
+                // console.log(userchoice)
+                const computerchoice = getComputerchoice();
+                const result = determinewinnerchoice(userchoice, computerchoice);
+                results.innerText = `You chose ${userchoice}, Computer chose ${computerchoice}. ${result};`
+            })
+        });
+        function getComputerchoice() {
+            const random = Math.floor(Math.random() * 3);
+            return ['rock', 'paper', 'scissor'][random];
+        }
+        function determinewinnerchoice(userchoice, computerchoice) {
+            if (userchoice === computerchoice) {
+                return "its tie!";
+            }
+            else if (
+                (userchoice === 'rock' && computerchoice === 'scissor') ||
+                (userchoice === 'paper' && computerchoice === 'rock') ||
+                (userchoice === 'scissor' && computerchoice === 'paper')
+            ) {
+                return "You win!";
+            } else {
+                return "You lose!";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photo editor app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <main>
+    <div class="container disabled">
+        <h1>photo editor app</h1>
+        <hr />
+        <div class="view_img">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAC+CAMAAAARDgovAAAAh1BMVEX///8AAAD39/dHR0fIyMgSEhK8vLyXl5eAgID8/PwEBAT29vbu7u7y8vLq6urn5+ff399bW1vU1NTh4eGQkJCjo6Ozs7OdnZ1LS0saGhp3d3djY2MqKirExMRtbW2wsLA8PDyFhYVVVVWRkZExMTHQ0NA4ODghISFJSUktLS0YGBhhYWFycnKHjnxZAAAPvklEQVR4nO2dCZuiOBCGFfEIhyDe4El7dKv///dtLiACgQAJ6o7fs7Nj9wiG16JSqUpCp/PVV1999dVXX3311VdfffXVRwu8ugHvIghiuBycp2NbY3/3T8rqIq0v4W403G9dxzL/VRKD7rM2vYk/m0MzsbV/DMmoy9NmFYyW+61n5RL5/2E6cEkwTMIHNBNvarMH/t9QWAUADPSf8fSr08T/gWbi2OVn/jTphcZg0D8Z9Te94Dgf6K5lvvoKZGlOriycHNYCt0lWt81h4g/nW2+a707wTYT/Bbz57UQdpgs0yzlv5zM/WJ3STIzU3zwk4e44X5xdJxWbAOb1GyvEl7Gxkt+YluPqi+VxF/b+Cq+dp+tlFWBvMv2k2ET7w40PtZyvDJjjqTfY//j33unKu+zEXrLUjL/e5AHNRH8KYd9UFrmYXfG7gO14yEyC1eXar2Mm/VMYwBBW9xxTJF57hSU5hMRR9P3a2IXe5OcRXq4pGxC8kW4HZCbp2ITqlU7VI+1bVj8SMsFmUqHPeYa17gU+GumMmRuHdbAti4465oJvByCnrabjbfdDf3Kp5V+hriQ2mdqv9K8L0pZFR8p3YU/PgznsdE41kUB34s/22/MrQtgtacIZvZb3jQBkJvPh6L7apC82r4/JQfKHRn+utAbxZZ1pImKKP/guOQiMTwRMyz0PlsdH2OP2w3ztZbWnQEPosE6H1f2xw1/TfmzJS0aAp7+iX8J4DXmTEeyIy10sHe4MWvCe9+dPvl4Pq8luBEfeujcdq40MTdtxzyiEnRxOJbHJVmEzqKyiJqz/emHgz1COBg4hTIHgsCY405pCM5n5ExjC5jqPc73zVpHeFYyEjPVpFTyOQxgxe3BgldxCKdtv2B5oJvpgOUKDP7ZZLZBYilDI6gpHm/AWWuCxlaSmpCDaaKQzXJHP8yR9RoEewsFxYh3pn+EgHBrLHiVr6o6uAM+alm2RMEnusi8w6BYEtjlMRj/LhX52pQw6j6R96uMJ6jADAMeYx/1iPhvtJrz+nqIwhG2ojzM2y/3g7HHCZ1AauJD00W2q4NqfRYddeABKv0IANNuCbms/PPrB6pAJDYvFwWSsIRXYDSHPArshcb/6wIdfHSVXz4oOu0gIl/2CEJUx6uCIsfCzNFXUx5Gcj4wFxSzFWAJ8yGas6PoTUYck1EkB07amMBSCo4jdfXXZ1Mv7pnTboEju+EMiuVSxDUQk/tSPw2gWt7rxQVtxvDMMmo+P++rwVy9/lVL/esHxLY7kaHxLkqsn9SQI8luVkCDHy2kWDJu3C5QODw8nKVSguz0N4al/8Q8X5aUUjQQuh5qRYa7n16BjQf52tAsPm3XdlA2S34kqlAflWWALJVKM7kTZOAsnO6G/fdx7m8pQUI9Guq5f5SNRZ43DA1/152ChpI0+mKPyyeVWRCBK4czgQcQth8ob55IAYKb8g5Ce7iXNmkLPspz595wsBbUe5CeIz5kobxwaid4mwlncRgK5L5FgP0QiuQcMWdaJVaBmESaB8tYtoDNa6sbiXWq2QNPgsNwbEquA8R4gJErKURJEA6sWMkKVROcvLOAIsS0ScwK/jcxxFdExwCCe3aLapQP6kf13mwKyiE3VIa9Gqj8RgGU7fVRF7cn161HpQbxYyxcoTCzCf9M3bXWiAopaS2f3nHE3H/WnTc9d2ieYwds4zPhrS1J29cvW2ZMvfvtc3fr99XXTXfPf0ZZu69tpCaLB3ZBcP3TkZ/JKRsDzkxvPvqeCyIRJo41p3J9KKAa6OFptMiBsS6iNUcLoiH+6OXF/umhOIj0V+70VuQOSP1o7bGTxb5EYUpdJ07jjuD+V4NMxiYv+/goICSKavLRiEhKKgZhEr/l5lOvIkpjgy7/YcWQhoQT2MSRGLAmSxj2YcWQhYWD0mSRIGrensZFFU30mCZLGDUFUFjX+WRIXQqIjsyz6kSQASWij5KVP+lMJZdGPJKGRFC9KXu7wKxll0Y8kYZLRAUrZkcjiZBUeK6SPJGGTDgOl7MjMwIOEsugnk0ApOxJZ9CSkFz+SBE3jopRdL44smuojSdA0Lkoqkv509a+SoMnLH9if/sUxVlO9BwmBJYEsiSR5CUh/epfQhvcgISCWRJK81PpxZNFUb0FCc/XBwCuOjlgSSfJSYjHwDUi4xwOOlK73RUFnyJKga24GMQkZxcAmJCS4KdCxZ8ysq57OPStLgqYct3F/KqMY2ICEFBDuqvskbuGCJUHLonrcn0ooBjayCb159tC5PHEw+ChYEknykvanMsqVDUhYp0vTcB+s2FILmSjDSdizJJLkJe1PJZRF65MAqG1+k1sE5BTgDKN7s3JvPJbEkCFhFN5TFVTfJvCR+0YoxmkQBabOkqAAcVk0mmbUWLVJmFdsztP6M7BA3noiA83BzjsjS+JI3jqN+1MJxcC6JABNFnV/m3w4ZwcgPe+9LAmSvOxLLQbWIgE6TBWxgds2cygYXY7/y5JYj+P+9GUkYDzUJzeogfoyUDwxhysn3yTyI0aWxAN/+NVipxk1Vk2beNDeD/5/YwusUcqVxyGxy+s8WBI0jWux04waqwYJgI+KFn11u4+aJhGFRRk98t7MkAAkeYmimSVph4yVgbVIjNdPy98WNSNvm0Mi1/WwJJKy6FDefNFafcfuueV9tw4JEK1IyGhQcnfQRSe/WqczI2YpY2VgHRKLdNPDWmlE0DnmYDC6/dxEBUuCpHGZsqiMlYE1SLjZWVk1u1I3Z72xwUk2sCRIHIKW34wIu9eQgHdpdiuimrN7UrcZUf5Nz5IgO7qglB0ti8pYI1mRBOAsuT/Va8v4mlpxDH/iTDJlSJjXmETSnzZWZZvw8hf27ep1pFs4dDGeBua8EzEkbJLQRmEHLYvKWCNZlYS2SjOgqjkwHqyfd+bZ8ZwvQ2JM3g79CSATrg4y1hpUJTHjgOgaNaMbL+wmfrP/w43SGBLJSgYaWfzKWCMpTgKg8cWZN5/X6PZAycIAjrTFip7yOiqIkGISgEleAmKhMoqBVWwCgtDSHo5Fcayb5AXuYuiP5nrh3Z61CVQMTCKLxqpG4lGwuYQBR4SNW8Q/AUMiWdOhkYSwlIW9lfzEgL/vGPq9YTdaQQgKV5swJJKyqEnidSlrJKuQsMgl80zC6N4Vbq/FkEjKokl/2lxiJPB+ObTzLtK8bDlVfTEkaPJyT/aOkbXYW9Am0PXNyzgYKFGgyioYEpk1klJWBoraBOAFl8/6tTuK9u9kSCRrJJlpRo0lfHfYYTkHA309Vb2m4NsZEknykplm1FjCHpMbXKYknmbG2U97FthC8CISIGeN5I/wZxZIlMRWEER3I5wrQCScsCsYkTE2kSmLSlgjKUzC+hMEYYhvBQFBuBvhvS0ZEkrWSIqSCCrsXCZauI6dcH66LiWGxCwmIW+NpBiJ3AJmgc7l3zGOOrzIjA4dUFoyYUgcyXEOO82ouYRsglei4WhjCnUIHo3cSepSaH+7YfISp3EllkWFSJhVd4IujfmQBXhXJnLfl/YfDAmSvETzLJLIornKSQD8yaJeAj/bpbSKj26NU3RSgwSnJWJI0NWittSyaAkJfPcuqi+27jtF3zH6l2lqxsBlzN8MFIshQdO4ttSyqAAJt19j09SJxr0qfMHj3/QxQUneKSFBy6InU+6GqaUkzLDGAnycq+egAJzQ/ad4GMuQYMuiWFK20SkhgTrvGhsR4GkVnOtCScB7zgHQuRQ5zYQETa/3tDiykLJNaCEJ2GjhKDutS141BpCT7nLNzCgc0ickzHRZtCtlm9CSvsOpv9tn7iwIfK28R80VrmtjSDyVRSHSvowSWAkJbVIbRH4MjFzBkHtE0ZAlIWGny6LrFkiIDsVzdcu6dARiUeCBC1IuDAmSxkXJy6Q/ba5CErWdBFG2IAPIOXnp8aKxVELCIgXih9yyaAEJ0HEqbiCd0Sy7KX9ZDpA7ektIjMkpmLKocpto4iSIMrWgadkQhjsBICHhEJMaxcVAGatFC0nwPZuw1qlva8yrtCeacGLNhATd4A0Z3PKxu4crX8omunwSuozNnZ5rMlpQek6D5zUTEvI2eBMjYUvYCtp4nuwPyKyoMu07eY/PyZCQkrwsJQHHG/cK+boiFMwMRdHb7Zw3kE1I0LyR7B1tc0kAHP5I2PgMwkx2wt6LHnXNm16ZkJCZxi0lQZxEY6MwDHzfky94K8KWvGOV0xkkJGSmcYtI4Kkz47pPbssTyTK6/QpW5mcnECQk5G11V0YC/smdJ1lXJzRoRiFyBRNbdtJBWUJCZvKyiARTbpMjPLEQsPPKyo/A18kjITN5WUQCTSurnq8r1hwOGis4HeRdMg/uSUjI2+CtmAQ05J7s/TLXPrlAYRJQF9TnMGaRVIgVPe0px0/4cjHUk0E2SE1QJDZBO3jZe4BnbULFjpliz8d8PgJthgnySNCkieynPWVIOAr2kq0OAh/09DSAhAS1WUUk6CcCtM2ggk1166XH6awtkCIx3W4Hi/lc9lNcnknUfkygGp1IKQ08k+jE35oKEtHJvffaZxmV0kDaJpRwoCRW0U84gf5OKI5x2J2xCSUkJhHi41thIBtztEoioHOm9ddeeK6i4UU7JOjMD+siIzsjWVGyoh0SNBvv1+v4FYumetohscQeGr18PxDRVm7tkNjjOo+UJ2LKFrLSYaskOKtYXy+DPlynHRIov5ZZLP4+urRHQn+XsXiOoE3c4kkXykmgpMeb3hxYWqskmpeD1clqiwTaGKpTXrt9ndy2SNzQjC3O3lJvoXNbJK6o5CSz1iNbaOyBc3aqSWygb9aazp9RKRTv4BSSahIn+Lcl5eHiioSKwbjeo5oESlk5Up6crUho7R/OGKgmEaJdXF98sYVCWQM8a0I1iaBTsKyn3dGp0UdPKrxuNqfT5XI49Hq/K6gZoDNpVJNA84rPjVq/pq3HzacXEIbhZHIPgt1u93j4/mg0Oh5ns+FwOZ/P9/v9AmowGGy3un4+e57nQk2d6dSBGo8ty7KhTNPUoFACD9++qkmgZdnnE7yAnPbT1qPm0wtgWo+bDy8gbj5tvUlbL03wXNamBRIz9Emm3LZLl3lpgcRc0aL45gJAM6GZWdZ4PO1FORtFQiQkz1gCGm4+bv8Y3vmu63nns65vt1voGAaLBbzJ4K22HA6HP7PjETqQkf947HbBfTIJV73D4XL621yv63W/n3bXqkkMOhq8t3HbLcuhbceNR63fJq1fwtbPYONh830ftT1Abf+N237rK45KVJNYX29Z/K9TQUtkz0ZlNb29ZT6bI4F12vUldXaZYuUvqJIlMAh6n6Df3mSuajcgAgIgX/8JMjsCOxI0QqHu1Cr0Yc396quvvvrqq6+++uqrr/7/+g8szgNEFILE+AAAAABJRU5ErkJggg==" alt="" />
+        </div>
+
+        <div class="choose_img">
+            <button>choose Image <i class="fa-solid fa-upload"></i></button>
+            <input type="file" name="" id="" accept="image/*" hidden />
+        </div>
+
+        <div class="slider">
+            <div class="filter_info">
+                <span class="name">brightness</span>
+                <span class="value">100%</span>
+            </div>
+            <input type="range" name="" id="" max="200" min="0" value="100" />
+        </div>
+        <div class="icons_filter">
+            <p>filters</p>
+            <div class="icons_room">
+                <button title="brightness" id="brightness" class="active" >
+                    <img src="brightnss.png" alt="" />
+                </button>
+                <button title="contrast" id="contrast">
+                    <img src="contrast.png " alt="" />
+                </button>
+                <button title="saturate" id="saturate">
+                    <img src="opactiy.png" alt="" />
+                </button>
+                <button title="invert" id="invert">
+                    <img src="invert.png" alt="" />
+                </button>
+                <button title="blur" id="blur">
+                    <img src="blur.png" alt="" />
+                </button>
+            </div>
+        </div>
+        <div class="icons_filter">
+            <p>rotate & flip</p>
+            <div class="icons_room1">
+                <button title="rotate_left" id="rotate_left">
+                    <img src="rotateleft.png" alt="" />
+                </button>
+                <button title="rotate_right" id="rotate_right">
+                    <img src="rotateright.png" alt="" />
+                </button>
+                <button title="flip_x" id="flip_x">
+                    <img src="flip.png" alt="" />
+                </button>
+                <button title="flip_y" id="flip_y">
+                    <img src="flip.png" alt="" />
+                </button>
+            </div>
+        </div>
+
+        <div class="btn_contain">
+            <button class="reset">reset filter</button>
+            <button class="save">save image</button>
+        </div>
+    </div>
+</main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

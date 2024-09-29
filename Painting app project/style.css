@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    background-color: rgb(252, 93, 255);
+    color:  rgb(0, 0, 0);
+    overflow-x: hidden;
+    text-align: center;
+    position: relative;
+}
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    height: 90dvh;
+    width: 90vw;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.up{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    gap: 10px
+    ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bottom{
+    width: 100%;
+    height: 80%;
+}
+.fg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.df{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all ease 0.5;
+    box-shadow: 2px 3px 5px rgb(0, 0, 0);
+}
+.df:hover{
+    background-color: rgb(56, 55, 55);
+    color: white;
+    transition: all ease 0.5s;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+ul li{
+    list-style: none;
+    width: 23px;
+    height: 23px;
+    background-color: red;
+    list-style: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.selected{
+    border: 2px solid black;
+}
+.active{
+    background-color: gold;
+}
+
+ul li:nth-child(1){
+    background-color: black;
+    border: 2px solid greenyellow;
+}
+ul li:nth-child(2){
+    background-color: red;
+}
+ul li:nth-child(3){
+    background-color: blue;
+}
+ul li:nth-child(4){
+    background-color: orange;
+}
+ul li:nth-child(5){
+    background-color: green;
+}
+ul li:nth-child(6){
+    background-color: gold;
+}
+ul li:nth-child(7){
+    background-color: greenyellow;
+}
+ul li:nth-child(8){
+    background-color: grey;
+}
+ul li:nth-child(9){
+    background-color: aqua;
+}
+ul li:nth-child(10){
+    background-color: white;
+}
+canvas{
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid;
+}
+ol li {
+    list-style: none;
+}
+.abs{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

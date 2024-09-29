@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="con">
+    <div class="left">
+      <div class="content">
+        <label>HTML</label>
+        <textarea id="html" placeholder="Write HTML code here..."></textarea>
+        <button class="copy-btn" onclick="copyToClipboard('html')">Copy HTML</button>
+      </div>
+      <div class="content">
+        <label>CSS</label>
+        <textarea id="css" placeholder="Write CSS code here..."></textarea>
+        <button class="copy-btn" onclick="copyToClipboard('css')">Copy CSS</button>
+      </div>
+      <div class="content">
+        <label>JavaScript</label>
+        <textarea id="js" placeholder="Write JavaScript code here..."></textarea>
+        <button class="copy-btn" onclick="copyToClipboard('js')">Copy JavaScript</button>
+      </div>
+    </div>
+    <div class="right">
+      <label>Output</label>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+nav h1 {
+    
+    text-align: center;
+
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+#left {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(32, 28, 28);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    text-align: center;
+    width: 55%;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.songcard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border-bottom: 1px solid white;
+}
+
+.songcard:hover {
+    background-color: rgb(158, 157, 157);
+
+}
+
+.part1 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.songcard img {
+    height: 50px;
+    width: 50px;
+    border-radius: 34px;
+
+}
+
+.bottom {
+    width: 100%;
+    position: sticky;
+    z-index: 9;
+    bottom: 0;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.songinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity is ease-in;
+}
+
+.icons {
+    display: flex;
+    margin-top: 14px;
+    gap: 10px;
+    font-size: 30px;
+
+}
+.icons i {
+    cursor: pointer;
+}

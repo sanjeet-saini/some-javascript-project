@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c353d71a36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+    <div class="container">
+        <div class="row buttons abs">
+            <button class="clear-canvas df">Clear Canvas</button>
+            <br>
+            <button class="save-img df" >Save As Image</button>
+        </div>
+        <section class="tools-board up">
+            <div class="row">
+                <label for="" class="title"><strong>Tools</strong></label>
+                <ol class="options fg">
+                    <li class="option tool df" id="pencil">
+                        <i class="fas fa-pencil" id="icon"></i>
+                        <span>Pencil</span>
+                    </li>
+                    <li class="option active tool df" id="brush">
+                        <i class="fas fa-brush" id="icon"></i>
+                        <span>Brush</span>
+                    </li>
+                    <li class="option tool df" id="eraser">
+                        <i class="fas fa-eraser" id="icon"></i>
+                        <span>Eraser</span>
+                    </li>
+                </ol>
+                <ol class="options">
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5" />
+                    </li>
+                </ol>
+            </div>
+            <div class="row colors">
+                <label for="" class="title">Colors</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" value="#00FF00" name="" id="color-picker" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <label for="" class="title"> <strong>Shapes</strong></label>
+                <ol class="options  fg">
+                    <li class="option tool df" id="rectangle">
+                        <i class="fa-solid fa-dice-one"></i>
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option tool df" id="circle">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>Circle</span>
+                    </li>
+                    <li class="option tool df" id="triangle">
+                        <i class="fa-solid fa-mountain"></i>
+                        <span>Triangle</span>
+                    </li>
+                    <li class="option tool df" id="square">
+                        <i class="far fa-square"></i>
+                        <span>Square</span>
+                    </li>
+                    <li class="option tool df" id="hexagon">
+                        <i class="fa-solid fa-cube"></i>
+                        <span>Hexagon</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color" />
+                        <label for="fill-color"> Fill Color</label>
+                    </li>
+                </ol>
+            </div>
+            
+        </section>
+        <section class="bottom">
+            <canvas></canvas>
+        </section>
+    </div>
+</main>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
